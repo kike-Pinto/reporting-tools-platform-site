@@ -1,25 +1,24 @@
-# Reporting Tools Platform
+# Reporting Tools Platform Site
 
-Reporting Tools Platform is a collection of browser-based tools for creating professional operational reports.
+GitHub Pages support site for Reporting Tools Platform and SEO indexing.
 
-Website: https://reporting-tools-platform.vercel.app/
+## Website
 
-## Available Tools
+https://reporting-tools-platform.vercel.app/
+
+## Available Pages
+
+- Home
+- Tools
+- Guides
+
+## Reporting Tools
 
 - Daily Report Generator
 - Shift Handover Generator
 - Maintenance Report Generator
 - Incident Report Generator
 - Progress Report Generator
-
-## Features
-
-- Browser based
-- No installation required
-- Live report preview
-- Professional PDF export
-- Structured forms
-- Automatic KPI summaries
 
 ## Reporting Guides
 
@@ -32,14 +31,26 @@ Website: https://reporting-tools-platform.vercel.app/
 - How to Write an Incident Report
 - How to Write a Progress Report
 
-## Pages
+## GitHub Pages
 
-Home: https://reporting-tools-platform.vercel.app/
+Home
 
-Tools: https://reporting-tools-platform.vercel.app/tools
+https://kike-pinto.github.io/reporting-tools-platform-site/
 
-Guides: https://reporting-tools-platform.vercel.app/guides
+Tools
 
-## Source Code
+https://kike-pinto.github.io/reporting-tools-platform-site/tools.html
+
+Guides
+
+https://kike-pinto.github.io/reporting-tools-platform-site/guides.html
+
+## Main Project
+
+Website
+
+https://reporting-tools-platform.vercel.app/
+
+Source Code
 
 https://github.com/kike-Pinto/reporting-tools-platform
