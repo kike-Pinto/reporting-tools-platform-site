@@ -1,258 +1,812 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Reporting Guides | Reporting Tools Platform</title>
+    <title>Reporting Guides | Reporting Tools Platform</title>
 
-<meta name="description"
-content="Guides for writing daily reports, shift handovers, maintenance reports, incident reports and progress reports.">
+    <meta
+      name="description"
+      content="Explore guides for daily reports, shift handovers, maintenance reports, incident reports and project progress reports."
+    />
 
-<link rel="canonical"
-href="https://kike-pinto.github.io/reporting-tools-platform-site/guides.html">
+    <link
+      rel="canonical"
+      href="https://kike-pinto.github.io/reporting-tools-platform-site/guides.html"
+    />
 
-<style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#f8fafc;
-margin:0;
-color:#0f172a;
-}
+      html {
+        scroll-behavior: smooth;
+      }
 
-header,footer{
-background:#0f172a;
-color:white;
-padding:24px;
-}
+      body {
+        min-height: 100vh;
+        margin: 0;
+        background: #f8fafc;
+        color: #0f172a;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-nav a{
-color:white;
-margin-right:18px;
-text-decoration:none;
-font-weight:bold;
-}
+      header,
+      footer {
+        background: #0f172a;
+        color: white;
+      }
 
-main{
-max-width:900px;
-margin:auto;
-padding:40px 24px;
-}
+      header {
+        padding: 24px;
+      }
 
-.card{
-background:white;
-border:1px solid #e2e8f0;
-border-radius:18px;
-padding:20px;
-margin-bottom:18px;
-}
+      header h1 {
+        margin: 0 0 18px;
+      }
 
-h2{
-margin-top:0;
-}
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
 
-a.button{
-display:inline-block;
-margin-top:12px;
-padding:10px 18px;
-background:#2563eb;
-color:white;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-}
+      nav a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+      }
 
-</style>
+      nav a:hover {
+        color: #93c5fd;
+      }
 
-</head>
+      .hero {
+        border-bottom: 1px solid #e2e8f0;
+        background: white;
+        padding: 64px 24px;
+      }
 
-<body>
+      .hero-inner,
+      main,
+      .category-nav-inner,
+      .footer-inner {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
 
-<header>
+      .eyebrow {
+        margin: 0;
+        color: #2563eb;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
 
-<h1>Reporting Guides</h1>
+      .hero h2 {
+        max-width: 760px;
+        margin: 16px 0 0;
+        font-size: clamp(36px, 6vw, 58px);
+        line-height: 1.08;
+      }
 
-<nav>
-<a href="index.html">Home</a>
-<a href="tools.html">Tools</a>
-<a href="guides.html">Guides</a>
-<a href="https://reporting-tools-platform.vercel.app/">Website</a>
-</nav>
+      .hero p:last-child {
+        max-width: 720px;
+        margin: 22px 0 0;
+        color: #475569;
+        font-size: 18px;
+        line-height: 1.7;
+      }
 
-</header>
+      .category-nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        overflow-x: auto;
+        border-bottom: 1px solid #e2e8f0;
+        background: rgba(255, 255, 255, 0.96);
+      }
 
-<main>
+      .category-nav-inner {
+        display: flex;
+        gap: 10px;
+        padding: 14px 24px;
+      }
 
-<div class="card">
-<h2>How to Write a Daily Report</h2>
-<p>Learn the structure of a professional daily report for operational teams.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-daily-report">Read Guide</a>
-</div>
+      .category-nav a {
+        flex-shrink: 0;
+        border: 1px solid #e2e8f0;
+        border-radius: 999px;
+        background: #f8fafc;
+        color: #334155;
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+      }
 
-<div class="card">
-<h2>Daily Work Report Sample</h2>
-<p>See a practical daily work report sample with completed work, issues and pending tasks.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/daily-work-report-sample">Read Guide</a>
-</div>
+      .category-nav a:hover {
+        border-color: #93c5fd;
+        background: #eff6ff;
+        color: #1d4ed8;
+      }
 
-<div class="card">
-<h2>How to Write a Daily Report to Your Boss</h2>
-<p>Learn how to write a clear daily report for a manager or supervisor.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-daily-report-to-your-boss">Read Guide</a>
-</div>
+      main {
+        padding: 56px 24px 80px;
+      }
 
-<div class="card">
-<h2>How to Write a Daily Report for Construction</h2>
-<p>Learn how to structure construction daily reports with site activities and delays.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-daily-report-for-construction">Read Guide</a>
-</div>
+      .guide-section {
+        scroll-margin-top: 90px;
+        margin-bottom: 80px;
+      }
 
+      .category-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        border: 1px solid #e2e8f0;
+        border-radius: 24px;
+        padding: 28px;
+      }
 
-  <!-- Nuevas guias (daily reports) -->
-<div class="card">
-<h2>Daily Activity Report</h2>
-<p>Learn how to document completed activities, working hours, results, issues and next steps.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/daily-activity-report">Read Guide</a>
-</div>
+      .category-header.daily {
+        border-color: #bfdbfe;
+        background: #eff6ff;
+      }
 
-<div class="card">
-<h2>Daily Status Report to Manager</h2>
-<p>Learn how to prepare a clear daily status update with progress, blockers and pending tasks.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/daily-status-report-to-manager">Read Guide</a>
-</div>  
+      .category-header.maintenance {
+        border-color: #fde68a;
+        background: #fffbeb;
+      }
 
-<div class="card">
-<h2>Daily Report Examples</h2>
-<p>Review practical daily report examples for work, construction, maintenance and operations.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/daily-report-examples">Read Guide</a>
-</div>
+      .category-header.incident {
+        border-color: #fecaca;
+        background: #fef2f2;
+      }
 
-<div class="card">
-<h2>Daily Report Format</h2>
-<p>Use a structured format for completed work, progress, issues and pending tasks.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/daily-report-format">Read Guide</a>
-</div>
+      .category-header.progress {
+        border-color: #a7f3d0;
+        background: #ecfdf5;
+      }
 
-<div class="card">
-<h2>End of Day Report</h2>
-<p>Learn how to summarize completed work, progress, blockers, pending tasks and next steps at the end of a workday.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/end-of-day-report">Read Guide</a>
-</div>
+      .category-header.handover {
+        border-color: #ddd6fe;
+        background: #f5f3ff;
+      }
 
-<!-- (Guias de maintenance) -->
-<div class="card">
-<h2>Maintenance Report Example</h2>
-<p>Review preventive and corrective maintenance report examples with findings, parts used and recommendations.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/maintenance-report-example">Read Guide</a>
-</div> 
+      .category-header h2 {
+        margin: 0;
+        font-size: 32px;
+      }
 
-<div class="card">
-<h2>Maintenance Reporting Guide</h2>
-<p>Learn how maintenance reporting works, including report types, equipment information, KPIs and best practices.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/maintenance-reporting-guide">Read Guide</a>
-</div>
+      .category-header p {
+        max-width: 720px;
+        margin: 12px 0 0;
+        color: #475569;
+        line-height: 1.7;
+      }
 
-<div class="card">
-<h2>Preventive Maintenance Report</h2>
-<p>Learn how to document scheduled maintenance, inspection findings, measurements and follow-up actions.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/preventive-maintenance-report">Read Guide</a>
-</div>
+      .count {
+        flex-shrink: 0;
+        border-radius: 999px;
+        background: white;
+        padding: 8px 13px;
+        color: #475569;
+        font-size: 13px;
+        font-weight: bold;
+      }
 
-<div class="card">
-<h2>Equipment Maintenance Report</h2>
-<p>Learn how to document equipment condition, completed repairs, parts, test results and final operational status.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/equipment-maintenance-report">Read Guide</a>
-</div>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+        margin-top: 24px;
+      }
 
-<div class="card">
-<h2>Maintenance Checklist</h2>
-<p>Use a practical checklist for work preparation, equipment inspection, completed maintenance and final testing.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/maintenance-checklist">Read Guide</a>
-</div>
+      .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        background: white;
+        padding: 22px;
+        box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
 
-<!-- (Guias de incident) -->
-<div class="card">
-<h2>Incident Report Example</h2>
-<p>Review practical incident report examples with immediate actions, contributing factors and corrective actions.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/incident-report-example">Read Guide</a>
-</div>
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 30px rgba(15, 23, 42, 0.1);
+      }
 
-<div class="card">
-<h2>Safety Incident Report</h2>
-<p>Learn how to document workplace safety incidents, severity, immediate controls and corrective actions.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/safety-incident-report">Read Guide</a>
-</div>
+      .card h3 {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.35;
+      }
 
-<div class="card">
-<h2>Near Miss Report</h2>
-<p>Learn how to document near miss events, potential consequences, immediate controls and corrective actions.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/near-miss-report">Read Guide</a>
-</div>
+      .card p {
+        flex: 1;
+        margin: 12px 0 0;
+        color: #475569;
+        font-size: 14px;
+        line-height: 1.65;
+      }
 
-<div class="card">
-<h2>Corrective Action Report</h2>
-<p>Learn how to document root causes, action owners, due dates and effectiveness reviews.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/corrective-action-report">Read Guide</a>
-</div>
+      .button {
+        display: inline-block;
+        align-self: flex-start;
+        margin-top: 20px;
+        border-radius: 10px;
+        background: #0f172a;
+        color: white;
+        padding: 11px 17px;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.2s ease;
+      }
 
-<!-- (Guias de progress) -->
-<div class="card">
-<h2>Weekly Progress Report</h2>
-<p>Learn how to report weekly project progress, completed work, schedule variance, risks and next-week priorities.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/weekly-progress-report">Read Guide</a>
-</div>
+      .button:hover {
+        background: #2563eb;
+      }
 
-<div class="card">
-<h2>Project Status Report</h2>
-<p>Learn how to summarize project health, progress, schedule, budget, issues, risks and stakeholder decisions.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/project-status-report">Read Guide</a>
-</div>
+      footer {
+        padding: 28px 24px;
+      }
 
-<!-- Guias de handover -->
-<div class="card">
-<h2>Shift Handover Example</h2>
-<p>Review practical shift handover examples with completed work, equipment status, pending tasks, risks and recommendations.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/shift-handover-example">Read Guide</a>
-</div>
+      .footer-inner {
+        color: #cbd5e1;
+        font-size: 14px;
+      }
 
-<div class="card">
-<h2>Shift Handover Checklist</h2>
-<p>Use a practical checklist to review completed work, equipment condition, pending tasks, permits and active risks.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/shift-handover-checklist">Read Guide</a>
-</div>  
-  
-<!-- Final de guias nuevas -->
+      @media (max-width: 850px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
 
-<div class="card">
-<h2>How to Write a Shift Handover Report</h2>
-<p>Learn how to structure shift handover reports for operational continuity.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-shift-handover-report">Read Guide</a>
-</div>
+      @media (max-width: 600px) {
+        header {
+          padding: 20px;
+        }
 
-<div class="card">
-<h2>How to Write a Maintenance Report</h2>
-<p>Learn how to structure equipment maintenance reports with findings and recommendations.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-maintenance-report">Read Guide</a>
-</div>
+        .hero {
+          padding: 48px 20px;
+        }
 
-<div class="card">
-<h2>How to Write an Incident Report</h2>
-<p>Learn how to write professional incident reports with corrective actions.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-an-incident-report">Read Guide</a>
-</div>
+        main {
+          padding: 40px 20px 64px;
+        }
 
-<div class="card">
-<h2>How to Write a Progress Report</h2>
-<p>Learn how to structure project progress reports with planned progress and next steps.</p>
-<a class="button" href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-progress-report">Read Guide</a>
-</div>
+        .category-nav-inner {
+          width: max-content;
+          padding-right: 20px;
+          padding-left: 20px;
+        }
 
-</main>
+        .category-header {
+          flex-direction: column;
+          padding: 22px;
+        }
 
-<footer>
-Reporting Tools Platform
-</footer>
+        .category-header h2 {
+          font-size: 27px;
+        }
 
-</body>
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .button {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="hero-inner">
+        <h1>Reporting Guides</h1>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="tools.html">Tools</a>
+          <a href="guides.html">Guides</a>
+          <a href="https://reporting-tools-platform.vercel.app/">Website</a>
+          <a href="https://github.com/kike-Pinto/reporting-tools-platform">
+            GitHub
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <p class="eyebrow">26 Reporting Guides</p>
+
+        <h2>Learn how to create professional operational reports</h2>
+
+        <p>
+          Explore practical resources for daily reporting, equipment
+          maintenance, safety incidents, project progress and shift handovers.
+        </p>
+      </div>
+    </section>
+
+    <div class="category-nav">
+      <div class="category-nav-inner">
+        <a href="#daily-reports">Daily Reports · 9</a>
+        <a href="#maintenance-reports">Maintenance · 6</a>
+        <a href="#incident-reports">Incidents · 5</a>
+        <a href="#progress-reports">Progress · 3</a>
+        <a href="#shift-handover">Shift Handover · 3</a>
+      </div>
+    </div>
+
+    <main>
+      <section id="daily-reports" class="guide-section">
+        <div class="category-header daily">
+          <div>
+            <h2>Daily Reports</h2>
+
+            <p>
+              Guides for daily work reports, activity summaries, construction
+              updates, end-of-day reports and management communication.
+            </p>
+          </div>
+
+          <span class="count">9 guides</span>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>How to Write a Daily Report</h3>
+            <p>
+              Learn the structure of a professional daily report for operational
+              teams.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-daily-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Daily Work Report Sample</h3>
+            <p>
+              See a practical daily work report with completed work, issues and
+              pending tasks.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/daily-work-report-sample"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>How to Write a Daily Report to Your Boss</h3>
+            <p>
+              Learn how to prepare a clear daily update for a manager or
+              supervisor.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-daily-report-to-your-boss"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>How to Write a Daily Report for Construction</h3>
+            <p>
+              Structure construction daily reports with site activities,
+              manpower and delays.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-daily-report-for-construction"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Daily Report Examples</h3>
+            <p>
+              Review examples for office work, construction, maintenance and
+              operations.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/daily-report-examples"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Daily Report Format</h3>
+            <p>
+              Use a structured format for work completed, progress, issues and
+              next steps.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/daily-report-format"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Daily Activity Report</h3>
+            <p>
+              Document completed activities, working hours, results and pending
+              work.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/daily-activity-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Daily Status Report to Manager</h3>
+            <p>
+              Prepare a concise management update with progress, blockers and
+              priorities.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/daily-status-report-to-manager"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>End of Day Report</h3>
+            <p>
+              Summarize completed work, progress, blockers, pending tasks and
+              next steps.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/end-of-day-report"
+            >
+              Read Guide
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="maintenance-reports" class="guide-section">
+        <div class="category-header maintenance">
+          <div>
+            <h2>Maintenance Reports</h2>
+
+            <p>
+              Guides for equipment servicing, preventive maintenance,
+              inspections, repair documentation and maintenance checklists.
+            </p>
+          </div>
+
+          <span class="count">6 guides</span>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>How to Write a Maintenance Report</h3>
+            <p>
+              Learn how to structure equipment maintenance reports with
+              findings and recommendations.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-maintenance-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Maintenance Report Example</h3>
+            <p>
+              Review preventive and corrective examples with parts and
+              recommendations.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/maintenance-report-example"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Maintenance Reporting Guide</h3>
+            <p>
+              Learn about maintenance report types, equipment information and
+              KPIs.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/maintenance-reporting-guide"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Preventive Maintenance Report</h3>
+            <p>
+              Document scheduled maintenance, inspections, measurements and
+              follow-up work.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/preventive-maintenance-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Equipment Maintenance Report</h3>
+            <p>
+              Document equipment condition, repairs, parts, test results and
+              final status.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/equipment-maintenance-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Maintenance Checklist</h3>
+            <p>
+              Use a practical checklist for preparation, inspection, maintenance
+              and testing.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/maintenance-checklist"
+            >
+              Read Guide
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="incident-reports" class="guide-section">
+        <div class="category-header incident">
+          <div>
+            <h2>Incident Reports</h2>
+
+            <p>
+              Guides for workplace incidents, safety events, near misses,
+              contributing factors and corrective actions.
+            </p>
+          </div>
+
+          <span class="count">5 guides</span>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>How to Write an Incident Report</h3>
+            <p>
+              Learn how to document incident details, root causes and corrective
+              actions.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-an-incident-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Incident Report Example</h3>
+            <p>
+              Review practical incident examples with immediate and corrective
+              actions.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/incident-report-example"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Safety Incident Report</h3>
+            <p>
+              Document workplace safety incidents, severity and immediate
+              controls.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/safety-incident-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Near Miss Report</h3>
+            <p>
+              Document potential consequences, contributing factors and
+              preventive actions.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/near-miss-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Corrective Action Report</h3>
+            <p>
+              Record root causes, action owners, due dates and effectiveness
+              reviews.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/corrective-action-report"
+            >
+              Read Guide
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="progress-reports" class="guide-section">
+        <div class="category-header progress">
+          <div>
+            <h2>Progress Reports</h2>
+
+            <p>
+              Guides for project progress, weekly reporting, schedule
+              performance, project health, risks and stakeholder decisions.
+            </p>
+          </div>
+
+          <span class="count">3 guides</span>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>How to Write a Progress Report</h3>
+            <p>
+              Structure project reports with planned progress, actual progress
+              and next steps.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-progress-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Weekly Progress Report</h3>
+            <p>
+              Report weekly progress, completed work, schedule variance and
+              priorities.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/weekly-progress-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Project Status Report</h3>
+            <p>
+              Summarize project health, schedule, budget, issues, risks and
+              decisions.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/project-status-report"
+            >
+              Read Guide
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="shift-handover" class="guide-section">
+        <div class="category-header handover">
+          <div>
+            <h2>Shift Handover</h2>
+
+            <p>
+              Guides for transferring completed work, equipment condition,
+              pending tasks, active risks and next-shift priorities.
+            </p>
+          </div>
+
+          <span class="count">3 guides</span>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>How to Write a Shift Handover Report</h3>
+            <p>
+              Learn how to structure handover reports for operational
+              continuity.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/how-to-write-a-shift-handover-report"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Shift Handover Example</h3>
+            <p>
+              Review examples with completed work, equipment status and pending
+              tasks.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/shift-handover-example"
+            >
+              Read Guide
+            </a>
+          </article>
+
+          <article class="card">
+            <h3>Shift Handover Checklist</h3>
+            <p>
+              Review equipment condition, permits, open tasks and active risks.
+            </p>
+            <a
+              class="button"
+              href="https://reporting-tools-platform.vercel.app/guides/shift-handover-checklist"
+            >
+              Read Guide
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        Reporting Tools Platform — GitHub Pages support site.
+      </div>
+    </footer>
+  </body>
 </html>
