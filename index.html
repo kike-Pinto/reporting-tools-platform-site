@@ -1,87 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reporting Tools Platform</title>
-  <meta name="description" content="Browser-based reporting tools for creating daily reports, shift handovers, maintenance reports, incident reports and progress reports." />
-  <link rel="canonical" href="https://kike-pinto.github.io/reporting-tools-platform-site/" />
-  <style>
-   html,
-body {
-  height: 100%;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reporting Tools Platform</title>
+
+<meta
+  name="description"
+  content="Professional browser-based reporting tools for operations, maintenance, construction and industrial teams."
+/>
+
+<link
+  rel="canonical"
+  href="https://kike-pinto.github.io/reporting-tools-platform-site/"
+/>
+
+<style>
+
+html,
+body{
+height:100%;
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:#f8fafc;
+color:#0f172a;
+scroll-behavior:smooth;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f8fafc;
-  color: #0f172a;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+body{
+display:flex;
+flex-direction:column;
+min-height:100vh;
 }
 
-header,
-footer {
-  background: #0f172a;
-  color: white;
-  padding: 24px;
+header{
+background:#0f172a;
+padding:24px;
+color:white;
 }
 
-main {
-  flex: 1;
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 48px 24px;
-  box-sizing: border-box;
+header h1{
+margin:0;
 }
-    .card { background: white; border: 1px solid #e2e8f0; border-radius: 18px; padding: 24px; margin-top: 20px; }
-    a {
-display:inline-block;
-margin-top:12px;
-padding:10px 18px;
-background:#2563eb;
+
+nav{
+margin-top:18px;
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+nav a{
 color:white;
 text-decoration:none;
-border-radius:10px;
 font-weight:bold;
 }
-    .button { display: inline-block; background: #0f172a; color: white; padding: 12px 18px; border-radius: 12px; text-decoration: none; font-weight: 700; margin-top: 12px; }
-  </style>
+
+nav a:hover{
+text-decoration:underline;
+}
+
+main{
+flex:1;
+max-width:1000px;
+margin:auto;
+padding:50px 24px;
+width:100%;
+box-sizing:border-box;
+}
+
+.hero{
+background:white;
+border:1px solid #e2e8f0;
+border-radius:22px;
+padding:40px;
+margin-bottom:30px;
+}
+
+.hero h2{
+margin-top:0;
+font-size:34px;
+}
+
+.hero p{
+line-height:1.7;
+font-size:18px;
+color:#475569;
+}
+
+.button{
+display:inline-block;
+margin-top:20px;
+padding:14px 22px;
+background:#0f172a;
+color:white;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.button:hover{
+background:#1e293b;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:22px;
+margin-top:24px;
+}
+
+.card{
+background:white;
+border:1px solid #e2e8f0;
+border-radius:18px;
+padding:24px;
+}
+
+.card h3{
+margin-top:0;
+}
+
+.card ul{
+padding-left:18px;
+line-height:1.8;
+}
+
+.card a{
+color:#2563eb;
+text-decoration:none;
+font-weight:bold;
+}
+
+.card a:hover{
+text-decoration:underline;
+}
+
+.section-title{
+margin-top:50px;
+margin-bottom:18px;
+font-size:30px;
+}
+
+footer{
+margin-top:40px;
+background:#0f172a;
+color:white;
+padding:28px;
+text-align:center;
+}
+
+footer a{
+color:#93c5fd;
+text-decoration:none;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+</style>
+
 </head>
+
 <body>
-  <header>
-    <h1>Reporting Tools Platform</h1>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./tools.html">Tools</a>
-      <a href="./guides.html">Guides</a>
-      <a href="https://reporting-tools-platform.vercel.app/">Website</a>
-      <a href="https://github.com/kike-Pinto/reporting-tools-platform">GitHub</a>
-    </nav>
-  </header>
 
-  <main>
-    <div class="card">
-      <h2>Professional operational reporting tools</h2>
-      <p>Reporting Tools Platform is a collection of browser-based tools for creating structured operational reports with live preview and PDF export.</p>
-      <a class="button" href="https://reporting-tools-platform.vercel.app/">Visit Platform</a>
-    </div>
+<header>
 
-    <div class="card">
-      <h2>Available sections</h2>
-      <ul>
-        <li><a href="./tools.html">Reporting tools</a></li>
-        <li><a href="./guides.html">Reporting guides</a></li>
-      </ul>
-    </div>
-  </main>
+<h1>Reporting Tools Platform</h1>
 
-  <footer>
-    <p>Reporting Tools Platform — GitHub Pages support site.</p>
-  </footer>
+<nav>
+<a href="./index.html">Home</a>
+<a href="./tools.html">Tools</a>
+<a href="./guides.html">Guides</a>
+<a href="https://reporting-tools-platform.vercel.app/">Website</a>
+<a href="https://github.com/kike-Pinto/reporting-tools-platform">GitHub</a>
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<h2>Professional Reporting Tools</h2>
+
+<p>
+
+Reporting Tools Platform helps operations, maintenance, construction and industrial teams create professional reports directly in the browser.
+
+Generate structured reports, review them instantly and export clean PDF documents without using Word templates or spreadsheets.
+
+</p>
+
+<a
+class="button"
+href="https://reporting-tools-platform.vercel.app/"
+>
+Visit Reporting Tools Platform
+</a>
+
+</section>
+
+<h2 class="section-title">
+Available Tools
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Report Generators</h3>
+
+<ul>
+
+<li>Daily Report Generator</li>
+
+<li>Shift Handover Generator</li>
+
+<li>Maintenance Report Generator</li>
+
+<li>Incident Report Generator</li>
+
+<li>Progress Report Generator</li>
+
+</ul>
+
+<p>
+
+<a href="./tools.html">
+Browse all reporting tools →
+</a>
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Reporting Guides</h3>
+
+<ul>
+
+<li>Daily Reports (9)</li>
+
+<li>Maintenance Reports (6)</li>
+
+<li>Incident Reports (5)</li>
+
+<li>Progress Reports (4)</li>
+
+<li>Shift Handovers (3)</li>
+
+</ul>
+
+<p>
+
+<a href="./guides.html">
+Browse all guides →
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<h2 class="section-title">
+Related Platforms
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Data Tools Platform</h3>
+
+<p>
+
+CSV, Excel and JSON tools for cleaning, converting and processing data.
+
+</p>
+
+<p>
+
+<a href="https://data-tools-platform.vercel.app/">
+Visit Platform →
+</a>
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Dashboard Tools Platform</h3>
+
+<p>
+
+Generate interactive KPI dashboards from Excel and CSV files.
+
+</p>
+
+<p>
+
+<a href="https://dashboard-tools-platform.vercel.app/">
+Visit Platform →
+</a>
+
+</p>
+
+</div>
+
+</div>
+
+<h2 class="section-title">
+Source Code
+</h2>
+
+<div class="card">
+
+<h3>GitHub Repository</h3>
+
+<p>
+
+Explore the complete source code, project structure and documentation.
+
+</p>
+
+<p>
+
+<a href="https://github.com/kike-Pinto/reporting-tools-platform">
+
+View Repository →
+
+</a>
+
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+
+Reporting Tools Platform — GitHub Pages Support Site
+
+</p>
+
+<p>
+
+Main Platform:
+<a href="https://reporting-tools-platform.vercel.app/">
+reporting-tools-platform.vercel.app
+</a>
+
+</p>
+
+</footer>
+
 </body>
 </html>
